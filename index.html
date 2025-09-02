@@ -180,13 +180,16 @@
     <section id="contact" class="section">
       <h2 class="section-title reveal">Contact</h2>
       <div class="contact-wrap">
-        <form class="contact-form" onsubmit="return false;" aria-label="Contact form">
+        <form action="https://formspree.io/f/mrbaaoqy" method="POST" class="contact-form" onsubmit="return false;" aria-label="Contact form">
           <label><span>Name</span><input type="text" placeholder="Your name" required></label>
           <label><span>Email</span><input type="email" placeholder="you@example.com" required></label>
           <label><span>Message</span><textarea placeholder="Hi Shivam..." required></textarea></label>
           <div class="form-actions">
-            <button class="btn">Send (demo)</button>
+            <button class="btn">Send</button>
             <button type="button" class="btn ghost" id="printSmall">Print</button>
+            <input type="hidden" name="_subject" value="New message from Resume Contact Form!">
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="_next" value="https://en.wikipedia.org/wiki/Tree">
           </div>
         </form>
 
@@ -212,4 +215,5 @@
   <a class="skip" href="#about">Skip to content</a>
 
 </body>
+
 </html>
