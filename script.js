@@ -1,6 +1,6 @@
 (() => {
   // TYPEWRITER
-  const titles = ['Frontend Developer', 'UI/UX Enthusiast', 'Performance-driven', 'Accessibility Advocate'];
+  const titles = ['Back-Office Support', 'UI/UX Enthusiast', 'Performance-driven', 'EAaaS Trainee'];
   const twEl = document.getElementById('typewriter');
   let tIdx = 0, cIdx = 0, deleting = false;
   function tick(){
@@ -106,5 +106,6 @@
 
   // footer year
   document.getElementById('year').textContent = new Date().getFullYear();
+
 
 })();
