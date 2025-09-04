@@ -34,7 +34,7 @@ body{
 /* Animated background */
 .page-bg{
   position:fixed;inset:0;z-index:-2;pointer-events:none;
-  background:linear-gradient(45deg, rgba(96,165,250,0.06), rgba(110,231,183,0.04));
+  background:linear-gradient(135deg, rgba(17,24,39,1), rgba(3,105,161,1));
   backdrop-filter: blur(14px);
   animation: bgShift 18s linear infinite;
 }
@@ -146,3 +146,4 @@ html.dark body{background:linear-gradient(120deg,#020617,#071025)}
   *{animation:none!important;transition:none!important}
 
 }
+
