@@ -25,7 +25,7 @@ body{
   margin:0;
   font-family:var(--fw-sans);
   color:#e6eef8;
-  background:linear-gradient(120deg, rgba(9,10,20,1) 0%, rgba(14,18,28,1) 40%, rgba(6,10,15,1) 100%);
+  background:linear-gradient(120deg, #0a0f0a 0%, #0d2620 100%);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   line-height:1.45;
@@ -34,7 +34,7 @@ body{
 /* Animated background */
 .page-bg{
   position:fixed;inset:0;z-index:-2;pointer-events:none;
-  background:background: linear-gradient(135deg, rgba(6,78,59,1), rgba(5,150,105,1));
+  background: linear-gradient(135deg, rgba(6,78,59,1), rgba(5,150,105,1));
   backdrop-filter: blur(14px);
   animation: bgShift 18s linear infinite;
 }
@@ -132,7 +132,7 @@ body{
 /* Dark theme support via .dark on html */
 :root{--text:#e6eef8}
 html.dark{--bg:#061021;--card:rgba(255,255,255,0.03);--glass:rgba(255,255,255,0.03)}
-html.dark body{background:linear-gradient(120deg,#020617,#071025)}
+html.dark body{background:linear-gradient(120deg, #0a0f0a 0%, #0d2620 100%)}
 
 /* Print rules */
 @media print{
@@ -146,6 +146,7 @@ html.dark body{background:linear-gradient(120deg,#020617,#071025)}
   *{animation:none!important;transition:none!important}
 
 }
+
 
 
 
