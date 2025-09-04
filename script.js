@@ -73,6 +73,34 @@
     });
   });
 
+
+
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault(); // stop default reload
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        alert("✅ Message sent successfully!");
+        form.reset(); // clear form ONLY on success
+      } else {
+        alert("❌ Oops! Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("⚠️ Network error. Please try again later.");
+    }
+  });
+
+
+
   // THEME TOGGLE
   const themeToggle = document.getElementById('themeToggle');
   const root = document.documentElement;
@@ -109,3 +137,4 @@
 
 
 })();
+
